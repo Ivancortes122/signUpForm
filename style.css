@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(/Users/ivancortes/repos/signUpForm/Norse-Bold.otf);
+}
+
+.odin img:first-child {
+    max-width: 40%;
+    max-height: 100vh;
+}
+
+.textContainer {
+    font-family: 'Norse-Bold';
+    background-color: rgba(0, 0, 0, .75);
+    color: black;
+    display: flex;
+}
+
+.textContainer img:first-child {
+   max-width: 25%;
+}
