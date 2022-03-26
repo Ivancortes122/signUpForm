@@ -3,18 +3,50 @@
     src: url(/Users/ivancortes/repos/signUpForm/Norse-Bold.otf);
 }
 
-.odin img:first-child {
-    max-width: 40%;
-    max-height: 100vh;
+
+body {
+
+}
+
+#sideContainer {
+    max-width: 40vw;
+    max-height: 100%;
+
+}
+.sideImg {
+    max-width: 40vw;
+    max-height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.odin {
+    font-family: 'Norse-Bold';
+    color: white;
+
 }
 
 .textContainer {
-    font-family: 'Norse-Bold';
-    background-color: rgba(0, 0, 0, .75);
-    color: black;
+    background-color: rgba(204, 186, 186, 0.75);
+    width: 30%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+    
 }
 
-.textContainer img:first-child {
+.containerImg {
    max-width: 25%;
+   max-height: 4rem;
+}
+
+#formContainer {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+  
+
+
 }
