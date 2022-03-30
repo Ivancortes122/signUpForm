@@ -4,53 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignUp Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-        <div id="sideContainer">
-        <img class="sideImg" src="space.jpg" alt="large planet next to small planet">    
-                <div class="textContainer">
-                    <img class="containerImg" src="odin.png" alt="Odin drawing">
-                    <h1 class="odin">ODIN</h1>
+    <div class="main">
+        <div class="sideHero">
+            <div>
+                <img class="containerImg" src="odin.png" alt="Odin drawing">
+                <h1 class="odin">ODIN</h1>
+            </div>
+            <p>Photo by null on Unsplash</p>
+        </div>
+        <div class="formContainer">
+            <div class="header">
+                <div>
+                    <p>This is not a real online service! You know you need something like this is in your life to help you realize your deepest dreams. Sign up now to get started</p>
+                    <p>You <em>know</em> you want to</p>
+                   
                 </div>
             </div>
-
-        <div id="formContainer">
-            <h1>This is not a real online service! You know you need something like this is in your life to help you realize your deepest dreams. Sign up now to get started</h1>
-            <h1>You know you want to</h1>
-
-            <form action="get">
-                <div>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" name="first_name" id="first_name"></input>
+            <div>
+                <div class="inputContainer">
+                    <form action="get" id="my-form">
+                            <p>Let's do this!</p>
+                            <label for="first_name">First Name: 
+                                <input type="text" name="first_name" id="first_name" placeholder="Joe" title="First Name"></input>
+                            </label>
+                            <label for="last_name"> Last Name: 
+                                <input type="text" name="last_name" id="last_name" placeholder="Mama" title="Last Name">
+                            </label>
+                            <label for="email">E-mail: <br>
+                                <input type="email" name="email" id="email" placeholder="joemamashouse@mail.com" title="E-mail">
+                            </label>
+                            <label for="phone">Phone Number: 
+                                <input type="tel" name="phone" id="phone" placeholder="800-420-6969" title="Phone Number" maxlength="10">
+                            </label>
+                            <label for="password">Password: 
+                                <input type="password" name="password" id="password" title="Password" placeholder="*********">
+                            </label>
+                            <label for="confirm_password">Confirm Password: 
+                                <input type="password" name="confirm_password" id="confirm_password" title="Confirm Password" placeholder="*********">
+                            </label>
+                    </form>
                 </div>
-                <div>
-                    <label for="last_name"></label>
-                    <input type="text" name="last_name" id="last_name">
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="phone"></label>
-                    <input type="number" name="phone" id="phone">
-                </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div>
-                    <label for="confirm_password"></label>
-                    <input type="password" name="confirm_password" id="confirm_password">
-                </div>
-
-            </form>
+            </div>
+        <div id="submitContainer">
+            <div>
+                <button type="submit" form="my-form">Create Account</button>
+                <p>Already have an account? <a href="">Log In</a></p>
+            </div>
         </div>
-        <div id="footer"></div>
-
+    </div>
 </body>
 </html>

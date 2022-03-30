@@ -1,52 +1,130 @@
 @font-face {
     font-family: 'Norse-Bold';
-    src: url(/Users/ivancortes/repos/signUpForm/Norse-Bold.otf);
+    src: url(./Norse-Bold.otf);
 }
 
-
-body {
-
+html body {
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;   
 }
 
-#sideContainer {
-    max-width: 40vw;
-    max-height: 100%;
-
-}
-.sideImg {
-    max-width: 40vw;
-    max-height: 100%;
-    position: absolute;
-    z-index: -1;
+.main {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
 }
 
-.odin {
-    font-family: 'Norse-Bold';
+.sideHero {
+    flex-grow: 1;
+    position: relative;
+    background: url(space.jpg);
+    background-size: cover;
+    width: 60vw;
+    min-width: 350px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-
 }
 
-.textContainer {
-    background-color: rgba(204, 186, 186, 0.75);
-    width: 30%;
+.sideHero div {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 2rem;
+    padding: 0px 2vw;
+    background-color: rgba(127, 126, 163, 0.151)
+}
+
+.sideHero img {
+    width: 5rem;
+    padding: 10px;
+}
+
+.sideHero p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
     position: absolute;
-    top: 15rem;
-    
+    bottom: 0px;
 }
 
-.containerImg {
-   max-width: 25%;
-   max-height: 4rem;
+.formContainer {
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-grow: 2;
+    background-color: rgb(240,240,240);
 }
 
-#formContainer {
-   display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
-  
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 1.2rem 2vw 2rem 2vw;
+    box-shadow: .1px 5px 5px rgba(0,0,0,0.1);
+}
 
+.header, .submitContainer {
+    padding: 0px 2vw;
+}
 
+.sideHero h1, .submitContainer button {
+    font-family: 'Norse-Bold';
+}
+
+form {
+    display: flex;
+    width: 60vw;
+    flex-flow: row wrap;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+label {
+    position: relative;
+    width: 15rem;
+    margin-bottom: 15px;
+
+}
+
+input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224,224,224);
+    margin-top: 3px;
+    font-size: .9rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(173, 73, 173);
+}
+
+.submitContainer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    padding: .8rem 1.3rem;
+    font-size: 1rem;
+    background-color: rgb(173, 73, 173);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(126, 40, 126);
 }
